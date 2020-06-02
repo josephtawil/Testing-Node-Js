@@ -8,4 +8,12 @@ describe("Add", () => {
             expect(add(2, 2)).toBe(4);
         });
     });
+
+    describe("Failure", () => {
+        //toBe is the result we expect
+        it("Should throw an error if 1st argument isn't a string", () => {
+            expect(() => add("2", 2)).toThrowError();
+        });
+    });
 });
+
